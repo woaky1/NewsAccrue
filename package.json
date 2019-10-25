@@ -1,0 +1,28 @@
+{
+  "name": "NewsAccrue",
+  "version": "1.0.0",
+  "description": "A web app that gathers news articles and lets users view them and comment on them. A Northwestern Coding Boot Camp homework assignment.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woaky1/NewsAccrue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woaky1/NewsAccrue/issues"
+  },
+  "homepage": "https://github.com/woaky1/NewsAccrue#readme"
+}
