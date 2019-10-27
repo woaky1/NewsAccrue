@@ -5,9 +5,8 @@ var app = express();
  
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
- 
-app.get('/', function (req, res) {
-    res.render('home');
-});
+
+var routes = require("./controllers/htmlController");
+app.use(routes);
  
 app.listen(3010);
