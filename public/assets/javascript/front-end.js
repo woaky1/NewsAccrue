@@ -1,5 +1,5 @@
-var dummyArticles = [{"article_title": "article title","article_link": "article link","article_comment_collection": [{"article_comment": "I'm a comment"}]},{"article_title": "article title 2","article_link": "article link 2","article_comment_collection": [{"article_comment": "I'm another comment"}]}];
-// var dummyArticles = [];
+// var dummyArticles = [{"article_title": "article title","article_link": "article link", "article_saved": false, "article_comment_collection": [{"article_comment": "I'm a comment"}]},{"article_title": "article title 2","article_link": "article link 2", "article_saved": false, "article_comment_collection": [{"article_comment": "I'm another comment"}]}];
+var dummyArticles = [];
 
 $(document).ready(function(){
     console.log("javascript running")
