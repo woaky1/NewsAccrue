@@ -1,6 +1,7 @@
-// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var mongoose = require("mongoose");
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsaccrue";
 
-mongoose.connect(MONGODB_URI);
+var connection = mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true});
 
+exports = connection;
