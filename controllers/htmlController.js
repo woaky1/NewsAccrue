@@ -20,21 +20,9 @@ router.get('/', function (req, res) {
         var result = {};
         result.articleTitle = $(this).text();
         result.articleLink = $(this).children("a").attr("href");
-        console.log(result);
         
         // Save these results in an object that we'll push into the results array we defined earlier
-        db.Article.find({articleTitle: result.articleTitle} function(err, found){
-          if (error) {
-            console.log(error);
-            res.send(error);
-          }
-          else {
-            // Otherwise, send the note to the browser
-            // This will fire off the success function of the ajax request
-            console.log(found);
-            res.send(found);
-          }
-        })
+
         db.Article.create(result)
         .then(function(dbArticle) {
           // View the added result in the console
