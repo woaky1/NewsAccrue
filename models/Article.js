@@ -13,7 +13,7 @@ var ArticleSchema = new Schema({
         type: String
     },
     articleSaved: {
-        isTrue: Boolean,
+        type: Boolean,
         default: false
     },
     comments: [
