@@ -37,6 +37,8 @@ axios.get("https://www.polygon.com").then(function(response) {
     // Log the results once you've looped through each of the elements found with cheerio
     console.log(results);
     });
+
+    module.exports = router;
 // db.Article.find({articleSaved: false}, function(error,found){
 //     if (error) {
 //       console.log(error);
