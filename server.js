@@ -10,8 +10,8 @@ app.use(express.static('public'))
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-var routes = require("./controllers/htmlController");
-app.use(routes);
+require("./controllers/htmlController")(app)
+require("./controllers/apiController")(app)
  
 app.listen(PORT, function(){
     console.log("App running on port " + PORT + "!");
