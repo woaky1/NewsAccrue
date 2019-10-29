@@ -7,7 +7,6 @@ var router = express.Router();
 
 router.get('/', function (req, res) {
      axios.get("https://www.polygon.com").then(function(response) {
-    console.log(response);
     
     // Load the Response into cheerio and save it to a variable
     // '$' becomes a shorthand for cheerio's selector commands, much like jQuery's '$'
@@ -18,7 +17,10 @@ router.get('/', function (req, res) {
 
     // With cheerio, find each p-tag with the "title" class
     // (i: iterator. element: the current element)
-    $("p.title").each(function(i, element) {
+    $("h2.c-entry-box--compact__title").each(function(i, element) {
+
+        var title = $(element).find().text();
+        var link = $(element).find("a").attr("href");
 
         // Save the text of the element in a "title" variable
         var title = $(element).text();
